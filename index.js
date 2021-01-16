@@ -17,7 +17,7 @@ fetchMyIP((error, ip) => {
     }
     let obj = {latitude : coord.latitude, longitude : coord.longitude};
     
-    //console.log(obj);
+    //console.log(coord);
     fetchISSFlyOverTimes(obj.latitude, obj.longitude, (erro, times) => {
       if (erro) {
         console.log(erro.message);
