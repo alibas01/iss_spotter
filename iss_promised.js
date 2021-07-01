@@ -32,3 +32,6 @@ module.exports = { nextISSTimesForMyLocation };
 //module.exports = { fetchMyIP, fetchCoordsByIP, fetchISSFlyOverTimes };
 
 
+// http://api.open-notify.org/iss/v1/?lat=40.027435&lon=-105.251945
+
+

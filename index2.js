@@ -7,9 +7,9 @@
 //   .then(fetchISSFlyOverTimes)
 //   .then(body => console.log(body));
 
-const { nextISSTimesForMyLocation } = require('./iss_promised');
+const { nextISSTimesForMyLocation } = require("./iss_promised");
 
-const printPassTimes = function(passTimes) {
+const printPassTimes = function (passTimes) {
   for (const pass of passTimes) {
     const datetime = new Date(0);
     datetime.setUTCSeconds(pass.risetime);
@@ -18,8 +18,8 @@ const printPassTimes = function(passTimes) {
   }
 };
 
-// Call 
-  nextISSTimesForMyLocation()
+// Call
+nextISSTimesForMyLocation()
   .then((passTimes) => {
     printPassTimes(passTimes);
   })
